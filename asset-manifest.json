@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/homework-17-react-employee-directory/static/css/main.50d227b4.chunk.css",
+    "main.js": "/homework-17-react-employee-directory/static/js/main.adc6b94f.chunk.js",
+    "main.js.map": "/homework-17-react-employee-directory/static/js/main.adc6b94f.chunk.js.map",
+    "runtime-main.js": "/homework-17-react-employee-directory/static/js/runtime-main.ed10144f.js",
+    "runtime-main.js.map": "/homework-17-react-employee-directory/static/js/runtime-main.ed10144f.js.map",
+    "static/css/2.d51ac43e.chunk.css": "/homework-17-react-employee-directory/static/css/2.d51ac43e.chunk.css",
+    "static/js/2.b96cb132.chunk.js": "/homework-17-react-employee-directory/static/js/2.b96cb132.chunk.js",
+    "static/js/2.b96cb132.chunk.js.map": "/homework-17-react-employee-directory/static/js/2.b96cb132.chunk.js.map",
+    "index.html": "/homework-17-react-employee-directory/index.html",
+    "static/css/2.d51ac43e.chunk.css.map": "/homework-17-react-employee-directory/static/css/2.d51ac43e.chunk.css.map",
+    "static/css/main.50d227b4.chunk.css.map": "/homework-17-react-employee-directory/static/css/main.50d227b4.chunk.css.map",
+    "static/js/2.b96cb132.chunk.js.LICENSE.txt": "/homework-17-react-employee-directory/static/js/2.b96cb132.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed10144f.js",
+    "static/css/2.d51ac43e.chunk.css",
+    "static/js/2.b96cb132.chunk.js",
+    "static/css/main.50d227b4.chunk.css",
+    "static/js/main.adc6b94f.chunk.js"
+  ]
+}
