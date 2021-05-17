@@ -8,7 +8,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 var ReactBsTable = require('react-bootstrap-table');
 // var BootstrapTable = ReactBsTable.BootstrapTable;
 // var TableHeaderColumn = ReactBsTable.TableHeaderColumn;
-
+let order = 'desc';
 
 class TableHeader extends Component {
   state = {
@@ -34,20 +34,20 @@ class TableHeader extends Component {
     return cell.date;
   }
 
-  //   showName(cell, row) { // String example
-  //   return `${ cell.first }`
-  // };
+    constructor(props) {
+      super(props);
 
-  // nestedFields = (data, row, field) => {
-  //   let nested_field = field.split(',');
-  //   return data[nested_field[0]][nested_field[1]];
-  // }
+      this.options = {
+        defaultSortName: 'name', // default sort column name
+        defaultSortOrder: 'desc' // default sort order
+      };
+    }
   
   render() {
 
     const options = {
-      searchPosition: 'left',
-      SearchWidth: '20px' // right or left
+      searchPosition: 'left',// right or left
+      width: '20px' 
     };
     
     function showImg(cell, row) { // String example
@@ -62,7 +62,7 @@ class TableHeader extends Component {
       return (new Date([cell.date])).toLocaleDateString();
     }
     return (
- <BootstrapTable ref='table' data = {this.state.resultAPI} options={options} search striped hover exportCSV >
+ <BootstrapTable ref='table' data = {this.state.resultAPI} options={this.options} search striped hover exportCSV >
       <TableHeaderColumn dataField='picture' dataFormat={showImg}>Image</TableHeaderColumn>
         <TableHeaderColumn isKey dataSort dataField='name' dataFormat={showName} >Full Name</TableHeaderColumn>
         <TableHeaderColumn dataField='phone' dataSort >Phone</TableHeaderColumn>
@@ -70,7 +70,11 @@ class TableHeader extends Component {
         <TableHeaderColumn dataField='dob' dataFormat={showDOB} >DoB</TableHeaderColumn> 
   </BootstrapTable>
    )
-    
+}
+}
+
+
+export default TableHeader;
 
 
 
@@ -106,10 +110,3 @@ class TableHeader extends Component {
     //   </table>
     // );
 
-
-
-  }
-}
-
-
-export default TableHeader;
