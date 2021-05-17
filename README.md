@@ -15,7 +15,6 @@
 
 Pracctice React development by creating an employee directory app.
 
-<<<<<<< HEAD
 Click <a href = "https://mikemarino.github.io/homework-17-react-employee-directory/">here for the deployed application</a>.
 
 ![picture alt](screenshot.jpg "Employee Roster")
